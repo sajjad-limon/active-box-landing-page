@@ -1,0 +1,389 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*, div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol {
+    list-style: none;
+}
+a,a:hover {
+    text-decoration: none;
+}
+:root {
+    --primary_text_font:  'Raleway', sans-serif;
+    --banner_text_font: 'Open Sans', sans-serif;
+    --footer_text_font: 'Cardo', serif;
+    --primary_white_color: #ffffff;
+    --primary_para_text: #2d3033;
+    --primary_para_color: #6c7279;
+}
+.container {
+    width: 90%;
+}
+/*========== header area start ==============*/
+header {
+    background: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar-nav .nav-item {
+    margin-right: 60px;
+    padding: 15px 0;
+}
+.navbar-nav .nav-item .nav-link {
+    font-family: var(--primary_text_font);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary_white_color);
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #e84545;
+}
+
+.banner_content h2 {
+    font-family: var(--banner_text_font);
+    font-size: 65px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary_white_color);
+    padding: 0 14%;
+    padding-top: 255px;
+    text-align: center;
+}
+.banner_content p {
+    font-family: var(--banner_text_font);
+    font-size: 22px;
+    color: var(--primary_white_color);
+    padding: 0 14%;
+    text-align: center;
+}
+.banner_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0;
+}
+.banner_content a {
+    font-family: var(--banner_text_font);
+    font-size: 13px;
+    color: var(--primary_white_color);
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #e84545;
+    border-radius: 3px;
+}
+/*========== header area end ==================*/
+
+/*========== service area start ==================*/
+.service_main {
+    padding: 144px 0;
+}
+.service_icon {
+    max-height: 56px;
+    width: auto;
+    text-align: center;
+}
+.service_icon img {
+    height: 100%;
+}
+
+.service_content h4 {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary_para_text);
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 20px;
+}
+.service_content p {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    color: var(--primary_para_color);
+    text-align: center;
+    padding: 0 5%;
+    margin-bottom: 70px;
+}
+/*========== service area end ==================*/
+
+/*========== gallery area start ==================*/
+.gallery_img {
+    position: relative;
+    height: 350px;
+    transition: all linear .3s;
+}
+.gallery_img img {
+    height: 100%;
+    width: 100%;
+}
+.gallery_overlay {
+    background-color: #e84545;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery_overlay h4 {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary_white_color);
+    text-transform: uppercase;
+    text-align: center;
+}
+.gallery_overlay p {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    color: var(--primary_white_color);
+    text-align: center;
+}
+.gallery_img:hover .gallery_overlay {
+    opacity: .8;
+    transition: all linear .3s;
+}
+/*========== gallery area end ==================*/
+
+/*========== team area start ==================*/
+.team_main {
+    padding: 90px 0;
+}
+.team_content h4 {
+    font-family: var(--primary_text_font);
+    font-size: 22px;
+    color: var(--primary_para_text);
+    padding-top: 30px;
+}
+.team_content h6 {
+    font-family: var(--primary_text_font);
+    font-size: 13px;
+    color: var(--primary_para_text);
+    text-transform: uppercase;
+    padding-top: 5px;
+    color: #e84545;
+}
+.team_content p {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    color: var(--primary_para_color);
+    padding-top: 5px;
+    text-align: justify;
+    padding-right: 5%;
+    padding-bottom: 5px;
+}
+.team_icons i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #c6cacc;
+    color: #c6cacc;
+    margin-right: 10px;
+}
+.team_icons i:hover {
+    color: #e84545;
+}
+/*========== team area end ==================*/
+
+/*========== testimonial area start =========*/
+.testi_img {
+    height: 100%;
+    width: auto;
+}
+.testi_img img {
+    height: 100%;
+}
+.testi_content {
+    background-color: #53354a;
+}
+.testi_content {
+    padding: 113px 38% 156px 85px;
+}
+.testi_content h4 {
+    font-family: var(--footer_text_font);
+    font-size: 36px;
+    font-style: italic;
+    color: var(--primary_white_color);
+}
+.testi_content p {
+    font-family: var(--primary_text_font);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary_white_color);
+    padding-top: 20px;
+}
+
+/* slider */
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.slick-dots {
+    margin-bottom: 100px;
+    left: -20%;
+}
+.slick-dots li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.slick-dots li button:before {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    content: '';
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding-right: 0;
+    margin:  0;
+}
+.slick-dots li.slick-active button:before {
+    color: #ffffff;
+}
+/*========== testimonial area end ===========*/
+
+/*========== download area start ===========*/
+.download_main {
+    text-align: center;
+    padding: 100px 0;
+}
+.download_content h4 {
+    font-family: var(--primary_text_font);
+    font-size: 28px;
+    font-weight: 300;
+    color: var(--primary_para_text);
+}
+.download_content p {
+    font-family: var(--primary_text_font);
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary_para_text);
+}
+
+.download_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.download_button a {
+    font-family: var(--banner_text_font);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary_white_color);
+    padding: 15px 80px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #e84545;
+    border-radius: 3px;
+}
+/*========== download area end ===========*/
+
+/*========== contact us area start =======*/
+#contact {
+    background-color: #3a3e64;
+}
+.contact_main {
+    padding: 70px 0;
+}
+.location h4 {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: var(--primary_white_color);
+}
+.location p {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    color: #9d9fb2;
+}
+.contact_icons {
+    text-align: center;
+}
+.contact_icons h4 {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: var(--primary_white_color);
+}
+.contact_icons i {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin-right: 10px;
+}
+.contact_icons i:hover {
+    color: #e84545;
+}
+.about_active h4 {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: var(--primary_white_color);
+}
+.about_active p {
+    font-family: var(--primary_text_font);
+    font-size: 14px;
+    text-align: center;
+    color: #9d9fb2;
+}
+/*========== contact us area end =========*/
+
+/*========== footer area start ===========*/
+footer {
+    background-color: #313454;
+}
+.footer_main {
+    padding: 25px 0;
+}
+.footer_content p {
+    font-family: var(--primary_text_font);
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+    color: #75767a;
+}
+.footer_content p:last-child {
+    font-family: var(--banner_text_font);
+    font-size: 14px;
+    text-align: center;
+    color: #75767a;
+}
+.footer_content p a {
+    color: var(--primary_white_color);
+}
+.footer_content p i {
+    color: #e84545;
+    font-size: 12px;
+}
+/*========== footer area end ============*/
